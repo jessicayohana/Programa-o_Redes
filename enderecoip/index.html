@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Endereçamento IP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+      <script>
+          $(document).ready(function(){
+              $("button").click(function(){
+                  $.get("ip.php",
+                      {
+                         primeiro: $("#primeiro").val(),
+                         segundo:  $("#segundo").val(),
+                         terceiro: $("#terceiro").val(),
+                         quarto: $("#quarto").val(),
+                         mask: $("#mask").val()
+                      },function(resposta){
+                      $(".result").html(resposta);
+                  });
+              });
+          });
+
+      </script>
+
+  </head>
+  <body>
+
+    <div class="titulo">
+      <header>
+        <h1>Informações sobre deu IP</h1>
+      </header>
+
+    </div>
+
+    <div class="textos">
+
+        <input type="text" name="primeiro" id="primeiro">
+         <label>.</label>
+        <input type="text" name="segundo" id="segundo">
+        <label>.</label>
+        <input type="text" name="terceiro" id="terceiro">
+        <label>.</label>
+        <input type="text" name="quarto" id="quarto">
+        <label>/</label>
+        <input type="text" name="mask" id="mask">
+
+        <button id="confirmar">Enviar</button>
+
+    </div>
+
+      <div class="result">
+        <h3> </h3>
+      </div>
+
+     <div class="rodape">
+       <footer>Jessica Yohana Otto, 3INFO1 </footer>
+       <footer>3info1</footer>
+    </div>
+    </body>
+
+
+</html>

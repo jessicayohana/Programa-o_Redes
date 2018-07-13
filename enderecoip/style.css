@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(223, 250, 255);
+  color: #050000;
+}
+
+.titulo{
+   margin: 2%;
+   border:3px #2b4477 solid;
+   border-radius: 10px;
+   text-align: center;
+   text-decoration: underline;
+   border-style: dotted;
+}
+
+.textos{
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 25px;
+  margin-bottom: 3px;
+   text-align: center;
+}
+
+.textos button{
+  margin-left: 3%;
+  width:120px;
+  height:25px;
+}
+.rodape{
+  height:40px;
+  border:7px #040954 solid;
+  background-color: #0b6499;
+  padding-top:20px;
+  text-align:center;
+  margin-top:28%;
+}
+
+.result{
+    font-size: 12px;
+    font-family: Arial;
+    margin-top: 5%;
+    margin-left: 20%;
+}
+
+
